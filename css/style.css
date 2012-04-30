@@ -1793,7 +1793,7 @@ h3 { font-size: 13px; text-transform: uppercase; line-height: 13px; }
 .wrapper.navigation div.account.active { outline: 2px solid #012c57; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 
 .container.main .breadcrumbs { margin: 0 0 12px 0; border-bottom: 1px solid #d7d7d7; }
-.container.main .breadcrumbs ul { display: block; margin: 0 0 0 12px; }
+.container.main .breadcrumbs ul { display: block; margin: 12px 0; padding: 0; }
 .container.main .breadcrumbs ul li { display: inline; }
 .container.main .breadcrumbs ul li a { font-size: 11px; line-height: 12px; }
 .container.main .breadcrumbs ul li a.active { color: #737373; }
