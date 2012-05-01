@@ -2182,37 +2182,37 @@ width:898px;*/ height: 330px; }
 		} // end right bottom
 	} // end right
 }*/
-.container.main.contact-page { margin-top: 24px; }
-.container.main.contact-page .left { width: 500px; float: left; }
-.container.main.contact-page .left h2 { font-size: 16px; margin: 0; }
-.container.main.contact-page .left .contact-info h1 { margin: 0 0 12px 0; }
-.container.main.contact-page .left .contact-info .phone-number { margin: 36px 0; }
-.container.main.contact-page .left .contact-info p { margin: 0; }
-.container.main.contact-page .left .social-media { margin-top: 36px; }
-.container.main.contact-page .left .social-media ul { margin: 12px 0 0 0; }
-.container.main.contact-page .left .social-media ul li { display: block; float: left; margin-left: 20px; height: 36px; }
-.container.main.contact-page .left .social-media ul li a { background: url(../img/sprite.png); display: inline-block; width: 36px; height: 36px; }
-.container.main.contact-page .left .social-media ul li a.facebook { background-position: 0px -30px; }
-.container.main.contact-page .left .social-media ul li a.twitter { background-position: -36px -30px; }
-.container.main.contact-page .left .social-media ul li a.youtube { background-position: -72px -30px; }
-.container.main.contact-page .left .social-media ul li a.linkedin { background-position: -108px -30px; }
-.container.main.contact-page .left .social-media ul li a.googleplus { background-position: -144px -30px; }
-.container.main.contact-page .left .social-media ul li a.tumblr { background-position: -180px -30px; }
-.container.main.contact-page .left .social-media ul li:first-child { margin-left: 0; }
-.container.main.contact-page .right { border: 1px solid #cacaca; width: 367px; float: right; }
-.container.main.contact-page .right form { padding: 35px 36px; }
-.container.main.contact-page .right form label { float: left; color: #00529c; font-size: 16px; text-align: right; width: 90px; clear: left; margin-top: 6px; }
-.container.main.contact-page .right form input[type="text"], .container.main.contact-page .right form input[type="tel"], .container.main.contact-page .right form textarea { -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; float: left; border: 1px solid #ccc; width: 181px; padding: 5px; font-size: 16px; margin: 0 0 18px 12px; }
-.container.main.contact-page .right form textarea { height: 85px; color: #666666; }
-.container.main.contact-page .right form input[type="checkbox"] { float: left; clear: left; margin: 6px 0 0 102px; }
-.container.main.contact-page .right form .newsletter { color: #00529c; font-size: 12px; line-height: 15px; width: 172px; margin: 3px 0 0 8px; text-align: left; float: left; clear: none; }
-.container.main.contact-page .right form input[type="submit"] { margin: 24px 0 0 102px; }
-.container.main.contact-page .right form .button.blue { font-size: 13px; line-height: 13px; padding: 12px 24px; }
+.main.contact-page { margin-top: 24px; }
+.main.contact-page .left { width: 500px; float: left; }
+.main.contact-page .left h2 { font-size: 16px; margin: 0; }
+.main.contact-page .left .contact-info h1 { margin: 0 0 12px 0; }
+.main.contact-page .left .contact-info .phone-number { margin: 36px 0; }
+.main.contact-page .left .contact-info p { margin: 0; }
+.main.contact-page .left .social-media { margin-top: 36px; }
+.main.contact-page .left .social-media ul { margin: 12px 0 0 0; }
+.main.contact-page .left .social-media ul li { display: block; float: left; margin-left: 20px; height: 36px; }
+.main.contact-page .left .social-media ul li a { background: url(../img/sprite.png); display: inline-block; width: 36px; height: 36px; }
+.main.contact-page .left .social-media ul li a.facebook { background-position: 0px -30px; }
+.main.contact-page .left .social-media ul li a.twitter { background-position: -36px -30px; }
+.main.contact-page .left .social-media ul li a.youtube { background-position: -72px -30px; }
+.main.contact-page .left .social-media ul li a.linkedin { background-position: -108px -30px; }
+.main.contact-page .left .social-media ul li a.googleplus { background-position: -144px -30px; }
+.main.contact-page .left .social-media ul li a.tumblr { background-position: -180px -30px; }
+.main.contact-page .left .social-media ul li:first-child { margin-left: 0; }
+.main.contact-page .right { border: 1px solid #cacaca; width: 367px; float: right; }
+.main.contact-page .right form { padding: 35px 36px; }
+.main.contact-page .right form label { float: left; color: #00529c; font-size: 16px; text-align: right; width: 90px; clear: left; margin-top: 6px; }
+.main.contact-page .right form input[type="text"], .main.contact-page .right form input[type="tel"], .main.contact-page .right form textarea { -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; float: left; border: 1px solid #ccc; width: 181px; padding: 5px; font-size: 16px; margin: 0 0 18px 12px; }
+.main.contact-page .right form textarea { height: 85px; color: #666666; }
+.main.contact-page .right form input[type="checkbox"] { float: left; clear: left; margin: 6px 0 0 102px; }
+.main.contact-page .right form .newsletter { color: #00529c; font-size: 12px; line-height: 15px; width: 172px; margin: 3px 0 0 8px; text-align: left; float: left; clear: none; }
+.main.contact-page .right form input[type="submit"] { margin: 24px 0 0 102px; }
+.main.contact-page .right form .button.blue { font-size: 13px; line-height: 13px; padding: 12px 24px; }
 
-.container.main.contact-submit { color: #00529c; }
-.container.main.contact-submit h1 { display: block; margin: 54px 0 30px 0; font-size: 36px; line-height: 36px; }
-.container.main.contact-submit p { font-size: 16px; line-height: 16px; margin-bottom: 36px; }
-.container.main.contact-submit p a { color: #39f; }
+.main.contact-submit { color: #00529c; }
+.main.contact-submit h1 { margin: 54px 0 30px 0; font-size: 36px; line-height: 36px; }
+.main.contact-submit p { font-size: 16px; line-height: 16px; margin-bottom: 36px; }
+.main.contact-submit p a { color: #39f; }
 
 .wrapper.footer { margin-top: 75px; height: 360px; background: #00336c; }
 .wrapper.footer nav.footer { text-transform: uppercase; font-size: 12px; margin: 30px 0 24px; }
