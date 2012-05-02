@@ -1744,6 +1744,8 @@ body { background: #f0f0f0; font: 13px/18px "Lucida Sans Unicode", sans-serif; }
 body p { font-family: "Lucida Sans Unicode", sans-serif; margin-bottom: 18px; line-height: 18px; color: #666666; }
 body .dark-blue { color: #00529c; }
 body ul li { list-style: none; }
+body figure { padding: 0; margin: 0; }
+body button { -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
 
 .arrow.active { background-position: -238px -30px; }
 
@@ -1751,15 +1753,15 @@ body ul li { list-style: none; }
 
 .light-arrow { display: inline-block; background: url(../img/sprite.png); background-position: -232px -41px; width: 6px; height: 11px; margin: 0 0 -3px 8px; }
 
-.small-link { line-height: 26px; font-size: 11px; color: #39f; }
+a.small { line-height: 26px; font-size: 11px; }
 
 .button.gray { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; color: #fff; font-size: 11px; line-height: 12px; text-transform: uppercase; display: inline-block; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a8a8a8), color-stop(100%, #626262)); background-image: -webkit-linear-gradient(top, #a8a8a8, #626262); background-image: -moz-linear-gradient(top, #a8a8a8, #626262); background-image: -o-linear-gradient(top, #a8a8a8, #626262); background-image: -ms-linear-gradient(top, #a8a8a8, #626262); background-image: linear-gradient(top, #a8a8a8, #626262); padding: 12px 16px; border: 1px solid #bdbdbd; }
 
-.button.orange { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; color: #fff; font-size: 11px; line-height: 12px; text-transform: uppercase; display: inline-block; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d37e38), color-stop(100%, #a4441e)); background-image: -webkit-linear-gradient(top, #d37e38, #a4441e); background-image: -moz-linear-gradient(top, #d37e38, #a4441e); background-image: -o-linear-gradient(top, #d37e38, #a4441e); background-image: -ms-linear-gradient(top, #d37e38, #a4441e); background-image: linear-gradient(top, #d37e38, #a4441e); margin-top: 16px; padding: 12px 16px; border: 1px solid #c97232; }
+.button.orange { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; color: #fff; font-size: 11px; line-height: 12px; text-transform: uppercase; display: inline-block; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d37e38), color-stop(100%, #a4441e)); background-image: -webkit-linear-gradient(top, #d37e38, #a4441e); background-image: -moz-linear-gradient(top, #d37e38, #a4441e); background-image: -o-linear-gradient(top, #d37e38, #a4441e); background-image: -ms-linear-gradient(top, #d37e38, #a4441e); background-image: linear-gradient(top, #d37e38, #a4441e); margin-top: 16px; padding: 12px 16px; border: 1px solid #bb612b; }
 
 .button.blue { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; color: #fff; font-size: 11px; line-height: 12px; text-transform: uppercase; display: inline-block; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0057b6), color-stop(100%, #00326c)); background-image: -webkit-linear-gradient(top, #0057b6, #00326c); background-image: -moz-linear-gradient(top, #0057b6, #00326c); background-image: -o-linear-gradient(top, #0057b6, #00326c); background-image: -ms-linear-gradient(top, #0057b6, #00326c); background-image: linear-gradient(top, #0057b6, #00326c); margin-top: 6px; padding: 12px 16px; border: 1px solid #00529c; }
 
-a:link { color: #39f; }
+a, a:link { color: #39f; }
 
 a:focus { outline: 0; }
 
@@ -1769,7 +1771,7 @@ textarea { resize: none; }
 
 .main h1, .main h2, .main h3 { font-weight: normal; color: #00529c; margin: 24px 0 18px; }
 
-h1 { font-size: 24px; font-family: ChunkFive; line-height: 24px; }
+h1 { font-size: 24px; font-family: 'ChunkFive'; line-height: 24px; }
 
 h2 { font-size: 18px; line-height: 18px; }
 
@@ -1829,359 +1831,135 @@ h3 { font-size: 13px; text-transform: uppercase; line-height: 13px; }
 width:898px;*/ height: 330px; }
 .container.main .divider { -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0055b2), color-stop(100%, #003067)); background-image: -webkit-linear-gradient(top, #0055b2, #003067); background-image: -moz-linear-gradient(top, #0055b2, #003067); background-image: -o-linear-gradient(top, #0055b2, #003067); background-image: -ms-linear-gradient(top, #0055b2, #003067); background-image: linear-gradient(top, #0055b2, #003067); -webkit-box-shadow: #5999bf 0px 1px 1px inset; -moz-box-shadow: #5999bf 0px 1px 1px inset; box-shadow: #5999bf 0px 1px 1px inset; margin: 15px 0 18px 0; width: 898px; height: 12px; border: 1px solid #00529c; }
 
-/* 	.left {
-		position:relative;
-		width:408px;
-		float:left;
-		margin-right:24px;
+.main.home .left { position: relative; width: 408px; float: left; margin-right: 24px; }
+.main.home .left .networks { background: #f0f0f0; border: 1px solid #cacaca; }
+.main.home .left .networks h1 { text-align: center; margin-top: 18px; }
+.main.home .left .networks .network { background: #fff; position: relative; border: 1px solid #cacaca; height: 100px; width: 378px; margin: 0 13px 10px; }
+.main.home .left .networks .network .media-icon { border: 1px solid #cacaca; margin: 10px 0 0 10px; width: 78px; height: 78px; background: #ececec; }
+.main.home .left .networks .network .media-icon a { background: url(../img/sprite.png); display: inline-block; }
+.main.home .left .networks .network .media-icon .note { background-position: -276px -30px; width: 38px; height: 32px; margin: 25px 0 0 20px; }
+.main.home .left .networks .network .media-icon .laptop { background-position: -315px -30px; width: 37px; height: 26px; margin: 25px 0 0 20px; }
+.main.home .left .networks .network .media-icon .phone { background-position: -353px -30px; width: 22px; height: 35px; margin: 20px 0 0 28px; }
+.main.home .left .networks .network .media-icon .calendar { background-position: -375px -30px; width: 32px; height: 30px; margin: 22px 0 0 25px; }
+.main.home .left .networks .network .media-text { position: absolute; top: 0px; left: 110px; width: 260px; }
+.main.home .left .networks .network .media-text h2 { margin: 20px 0 8px 0; }
+.main.home .left .networks .network .media-text h2 a { color: #479acf; }
+.main.home .left .networks .network .media-text p { font-size: 13px; }
+.main.home .left .networks .network:last-child { margin-bottom: 15px; }
+.main.home .left .subscribe { position: relative; margin: 10px 0; border: 1px solid #cacaca; padding: 20px 0 30px; background: #fff; }
+.main.home .left .subscribe .mail { display: block; position: absolute; background: url(../img/sprite.png); background-position: -217px -53px; width: 25px; height: 14px; top: 25px; left: 20px; }
+.main.home .left .subscribe .recruit { font-size: 14px; line-height: 18px; color: #00529c; margin: 0 0 0 54px; }
+.main.home .left .subscribe .small.policy { margin-left: 16px; }
+.main.home .left .subscribe .email { -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; margin: 12px 15px 0 20px; border: 1px solid #cacaca; background: #e6e6e6; color: #949494; padding: 10px 12px; }
+.main.home .left .subscribe .sign { position: absolute; top: 43px; padding: 12px 25px; }
+.main.home .left .social-medias { position: relative; }
+.main.home .left .social-medias .social-media { background: #fff; height: 120px; width: 198px; border: 1px solid #cacaca; }
+.main.home .left .social-medias .social-media p { margin: 15px 0 0 25px; color: #00529c; }
+.main.home .left .social-medias .social-media ul li a { background: url(../img/sprite.png); position: absolute; display: block; width: 27px; height: 27px; }
+.main.home .left .social-medias .social-media ul li a.facebook { background-position: -216px -68px; top: 44px; left: 26px; }
+.main.home .left .social-medias .social-media ul li a.twitter { background-position: -243px -68px; top: 44px; left: 66px; }
+.main.home .left .social-medias .social-media ul li a.youtube { background-position: -271px -68px; top: 44px; left: 108px; }
+.main.home .left .social-medias .social-media ul li a.linkedin { background-position: -298px -68px; top: 44px; left: 149px; }
+.main.home .left .social-medias .social-media ul li a.googleplus { background-position: -325px -68px; top: 79px; left: 66px; }
+.main.home .left .social-medias .social-media ul li a.tumblr { background-position: -354px -68px; top: 79px; left: 108px; }
+.main.home .left .social-medias .social { background: #fff; border: 1px solid #cacaca; height: 55px; width: 196px; position: absolute; }
+.main.home .left .social-medias .social.facebook { top: 0; right: 0px; }
+.main.home .left .social-medias .social.facebook .favicon.facebook { position: absolute; background: url(../img/sprite.png); background-position: -244px -54px; width: 12px; height: 12px; }
+.main.home .left .social-medias .social.facebook .button.like { position: absolute; }
+.main.home .left .social-medias .social.googleplus { top: 65px; right: 0; }
+.main.home .left .social-medias .social.googleplus .googleplus { position: absolute; top: 12px; left: 72px; background: url(../img/sprite.png); background-position: -216px -96px; height: 29px; width: 29px; }
+.main.home .left .social-medias .social.googleplus p { margin: 17px 0 0 10px; }
+.main.home .left .social-medias .social.googleplus .button.follow { position: absolute; top: 12px; right: 10px; background: #f4f4f4; color: #222; font-size: 11px; line-height: 11px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; border: 1px solid #cacaca; padding: 9px 18px; }
+.main.home .right { position: relative; float: left; width: 468px; margin: 0; }
+.main.home .right .case-study { position: relative; margin-bottom: 30px; }
+.main.home .right .case-study .case-study.thumbnail { position: absolute; top: 0; left: 0; padding: 0; }
+.main.home .right .case-study .case-text { margin: 0 0 0 130px; }
+.main.home .right .case-study .case-text h1 { font-family: 'ChunkFive'; color: #666666; margin: 0 0 0 10px; text-transform: uppercase; }
+.main.home .right .case-study .case-text h2 { margin: 3px 0 0 10px; color: #666666; }
+.main.home .right .case-study .case-text p { font-size: 13px; width: 335px; color: #666666; margin: 0 0 5px 10px; }
+.main.home .right .case-study .case-text ul { margin: 0 0 0 10px; }
+.main.home .right .case-study .case-text ul li { display: inline; }
+.main.home .right .case-study .case-text ul li:first-child { margin-left: 0; padding-right: 15px; border-right: 1px solid #d3d3d3; }
+.main.home .right .case-study .case-text ul li:last-child { margin-left: 15px; border-right: none; }
+.main.home .right .mid { padding: 0 0 25px 0; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; }
+.main.home .right .mid .white-papers { float: left; width: 230px; margin-right: 35px; }
+.main.home .right .mid .white-papers h2 { color: #666666; font-family: 'ChunkFive'; text-transform: uppercase; margin-bottom: 15px; }
+.main.home .right .mid .white-papers article h3 { text-transform: none; margin: 0; margin-bottom: 6px; line-height: 18px; }
+.main.home .right .mid .white-papers article h3 a { color: #39c; }
+.main.home .right .mid .white-papers article p { font-size: 11px; color: #666666; margin-bottom: 18px; }
+.main.home .right .mid .latest-article { float: left; width: 200px; margin: 0; }
+.main.home .right .mid .latest-article h2 { color: #b85c29; font-family: 'ChunkFive'; text-transform: uppercase; }
+.main.home .right .mid .latest-article img { border: 1px solid #b1b1b1; }
+.main.home .right .mid .latest-article h3 { font-size: 14px; line-height: 18px; color: #00529c; text-transform: none; margin: 18px 0 6px 0; }
+.main.home .right .mid .latest-article h3 a { color: #00529c; }
+.main.home .right .mid .latest-article p { font-size: 13px; color: #666666; margin-bottom: 7px; }
+.main.home .right .media-services { margin: 35px 0 0; position: relative; }
+.main.home .right .media-services h2 { color: #00592; font-family: 'ChunkFive'; text-transform: uppercase; }
+.main.home .right .media-services p { font-size: 13px; width: 233px; color: #666666; }
+.main.home .right .media-services .media-image { position: absolute; top: 0; right: 0; background: url(../img/sprite.png); background-position: 0px -161px; width: 205px; height: 135px; float: right; }
 
-		.networks {
-			background:#f0f0f0;
-			border:1px solid #cacaca;
+.main.blog-article { margin-top: 40px; }
+.main.blog-article .arrow-orange { background: url(../img/sprite.png); background-position: -246px -96px; width: 98px; height: 49px; position: absolute; top: 0; left: 0; }
+.main.blog-article h2 { font-family: 'ChunkFive'; color: #b85c29; }
+.main.blog-article .social-share { outline: 1px solid #cacaca; background: #fff; margin-top: 69px; padding: 12px 0; width: 80px; float: left; text-align: center; }
+.main.blog-article .social-share .social { margin-bottom: 9px; }
+.main.blog-article .entry { width: 540px; margin: 0 36px; float: left; position: relative; }
+.main.blog-article .entry .left { float: left; margin: 0 18px 0 0; }
+.main.blog-article .entry .right { float: right; margin: 0 0 0 18px; }
+.main.blog-article .entry .title { margin: 0; padding: 0; line-height: 27px; width: 360px; }
+.main.blog-article .entry .entry-info { position: absolute; top: 6px; right: 0; }
+.main.blog-article .entry .entry-info figure { border: 1px solid #cacaca; background: #fff; float: left; margin-right: 9px; padding: 3px; }
+.main.blog-article .entry .entry-info div { float: left; }
+.main.blog-article .entry .entry-info div p { margin: 3px 0 0; font-size: 11px; }
+.main.blog-article .entry .meta-info { width: 100%; margin: 15px 0; padding: 12px 0; border-top: 1px solid #cacaca; border-bottom: 1px solid #cacaca; }
+.main.blog-article .entry .meta-info span { margin-right: 9px; float: left; }
+.main.blog-article .entry .meta-info p { display: inline-block; margin: 0 30px 0 0; font-size: 11px; line-height: 11px; }
+.main.blog-article .entry .meta-info p:last-child { margin-right: 0; }
+.main.blog-article .entry .meta-info .printer { background: url(../img/sprite.png); margin: 0 9px 0 5px; background-position: -216px -125px; width: 14px; height: 13px; }
+.main.blog-article .entry .meta-info .mail { background: url(../img/sprite.png); background-position: -216px -139px; width: 18px; height: 9px; margin-top: 1px; }
+.main.blog-article .entry .content figure img { margin-top: 3px; }
+.main.blog-article .entry .content h2 { font-family: "Lucida Sans Unicode"; font-size: 18px; line-height: 18px; color: #00529c; margin-top: 0; }
+.main.blog-article .entry .content blockquote { border: 1px solid #cacaca; background: #fff; height: 136px; width: 151px; display: block; margin: 0 24px 6px 0; padding: 18px 12px 6px; color: #b85c29; text-align: center; line-height: 30px; font-size: 18px; }
+.main.blog-article .entry .related-entries figure { outline: 1px solid #cacaca; background: #fff; padding: 9px; float: left; display: inline-block; margin: 0 12px 0 0; width: 154px; }
+.main.blog-article .entry .related-entries figure h2 { font-family: 'ChunkFive'; }
+.main.blog-article .entry .related-entries figure figcaption { margin-top: 12px; }
+.main.blog-article .entry .related-entries figure figcaption a { color: #00529c; }
+.main.blog-article .entry .related-entries figure:last-child { margin-right: 0; }
+.main.blog-article .sidebar { float: left; width: 208px; padding: 0; }
+.main.blog-article .sidebar div { margin-bottom: 12px; }
+.main.blog-article .sidebar .subscribe a { display: block; text-align: center; padding: 9px 0; margin: 0; }
+.main.blog-article .sidebar .subscribe .rss { background: url(../img/sprite.png); display: inline-block; background-position: -244px -49px; width: 11px; height: 11px; margin-right: 9px; }
+.main.blog-article .sidebar .social-media { width: 206px; border: 1px solid #cacaca; background: #fff; padding: 10px 0 20px; }
+.main.blog-article .sidebar .social-media p { margin-left: 28px; color: #00529c; text-transform: uppercase; font-size: 11px; line-height: 11px; }
+.main.blog-article .sidebar .social-media ul { margin: 20px 0 0 23px; }
+.main.blog-article .sidebar .social-media ul li { display: block; float: left; margin-left: 9px; height: 19px; }
+.main.blog-article .sidebar .social-media ul li a { background: url(../img/sprite.png); display: inline-block; width: 19px; height: 19px; }
+.main.blog-article .sidebar .social-media ul li a.facebook { background-position: -215px -150px; }
+.main.blog-article .sidebar .social-media ul li a.twitter { background-position: -234px -150px; }
+.main.blog-article .sidebar .social-media ul li a.youtube { background-position: -253px -150px; }
+.main.blog-article .sidebar .social-media ul li a.linkedin { background-position: -272px -150px; }
+.main.blog-article .sidebar .social-media ul li a.googleplus { background-position: -291px -150px; }
+.main.blog-article .sidebar .social-media ul li a.tumblr { background-position: -311px -150px; }
+.main.blog-article .sidebar .social-media ul li:first-child { margin-left: 0; }
+.main.blog-article .sidebar .follow { border: 1px solid #cacaca; background: #fff; width: 206px; }
+.main.blog-article .sidebar .follow.facebook .fb-like { margin: 15px 6px; }
+.main.blog-article .sidebar .follow.gplus { text-align: center; padding: 12px 0; }
+.main.blog-article .sidebar .follow.gplus p, .main.blog-article .sidebar .follow.gplus span, .main.blog-article .sidebar .follow.gplus a { display: inline-block; margin: 0; font-size: 14px; padding: 0; }
+.main.blog-article .sidebar .follow.gplus a { -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; padding: 6px 18px; background: #f3f3f3; border: 1px solid #cacaca; color: #654444; font-size: 11px; }
+.main.blog-article .sidebar .follow.gplus .gplus-icon { background: url(../img/sprite.png); vertical-align: middle; background-position: -216px -96px; height: 29px; width: 29px; margin: 0 12px 0 6px; }
+.main.blog-article .sidebar .categories { padding: 6px 0 10x; width: 100%; border-top: 1px solid #cacaca; }
+.main.blog-article .sidebar .categories h2 { margin: 18px 0 18px 3px; }
+.main.blog-article .sidebar .categories ul { margin: 0 0 0 3px; }
+.main.blog-article .sidebar .categories ul li { display: block; margin-bottom: 18px; }
+.main.blog-article .sidebar .categories ul li a { color: #00529c; }
+.main.blog-article .sidebar .archives { border-top: 1px solid #cacaca; border-bottom: 1px solid #cacaca; padding: 20px 0; }
+.main.blog-article .sidebar .archives h2 { margin: 0 0 0 4px; }
+.main.blog-article .sidebar .subscription { border: 1px solid #cacaca; background: #fff; }
+.main.blog-article .sidebar .subscription p { color: #00529c; font-size: 14px; line-height: 18px; margin: 18px 18px 6px; }
+.main.blog-article .sidebar .subscription a.small { display: block; margin: 3px 18px 24px; }
+.main.blog-article .sidebar .subscription input[type="text"] { -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; width: 145px; margin: 12px 0 0 18px; border: 1px solid #cacaca; background: #e6e6e6; color: #949494; padding: 6px 12px; }
+.main.blog-article .sidebar .subscription button { text-transform: uppercase; margin: 12px 0 0 18px; padding: 9px 24px; display: block; }
 
-			h1 {
-				text-align:center;
-				margin-top:18px;
-			}
-
-			.network {
-				background:#fff;
-				position:relative;
-				border:1px solid #cacaca;
-				height:100px;
-				width:378px;
-				margin:0 13px 10px;
-
-				.media-icon {
-					border:1px solid #cacaca;
-					margin:10px 0 0 10px;
-					width:78px;
-					height:78px;
-					background:#ececec;
-
-					a {
-						@include sprite;
-						display:inline-block;
-					}
-					.note { background-position: -278px -30px; width:38px; height:32px; margin: 25px 0 0 20px; }
-					.laptop { background-position: -317px -30px; width:37px; height:26px; margin: 25px 0 0 20px; }
-					.phone { background-position: -355px -30px; width:22px; height:35px; margin: 20px 0 0 28px; }
-					.calendar { background-position: -377px -30px; width:32px; height:30px; margin: 22px 0 0 25px; }
-				}
-
-				.media-text {
-					position:absolute;
-					top:0px;
-					left:110px;
-					width:260px;
-
-					h2 {
-						margin:20px 0 8px 0;
-					}
-
-					p {
-						font-size:13px;
-					}
-				}
-			}
-
-			.network:last-child {
-				margin-bottom:15px;
-			}
-
-		}
-
-		.subscribe {
-			position:relative;
-			margin:10px 0;
-			border:1px solid #cacaca;
-			padding:20px 0 30px;
-			background:#fff;
-
-			.mail {
-				display:block;
-				position:absolute;
-				@include sprite;
-				background-position: -217px -53px;
-				width:25px;
-				height:14px;
-				top:25px;
-				left:20px;
-			}
-
-			.recruit {
-				font-size:14px;
-				line-height:18px;
-				color:#00529c;
-				margin:0 0 0 54px;
-			}
-
-			.small-link.policy {
-				margin-left:16px;
-			}
-
-			.email {
-				@include border-radius(1px);
-				margin:12px 15px 0 20px;
-				border:1px solid #cacaca;
-				background:#e6e6e6;
-				color:#949494;
-				padding:10px 12px;
-			}
-
-				.sign {
-				position:absolute;
-				top:43px;
-				padding:12px 25px;
-			}
-		}
-
-		.social-medias {
-			position:relative;
-
-			.social-media {
-				background:#fff;
-				height:120px;
-				width:198px;
-				border:1px solid #cacaca;
-
-				p {
-					margin:15px 0 0 25px;
-					color:#00529c;
-				}
-
-				ul {
-
-					li {
-
-						a {
-							@include sprite;
-							position:absolute;
-							display:block;
-							width:27px; height:27px;
-						}
-
-						a.facebook { background-position: -217px -68px; top:44px; left:26px; }
-						a.twitter { background-position: -244px -68px; top:44px; left:66px; }
-						a.youtube { background-position: -273px -68px; top:44px; left:108px }
-						a.linkedin { background-position: -301px -68px; top:44px; left:149px }
-						a.googleplus { background-position: -329px -68px; top:79px; left:66px; }
-						a.tumblr { background-position: -357px -68px; top:79px; left:108px; }
-					}
-				}
-
-			}// end social-medias social-media
-
-			.social {
-				background:#fff;
-				border:1px solid #cacaca;
-				height:55px;
-				width:196px;
-				position:absolute;
-			}
-
-			.social.facebook {
-				top:0;
-				right:0px;
-
-				.favicon.facebook {
-						position:absolute;
-						@include sprite;
-						background-position: -244px -54px;
-						width:12px; height:12px;
-					}
-
-					.button.like {
-						position:absolute;
-					}
-				} // end social facebook
-
-			.social.googleplus {
-				top:65px;
-				right:0;
-
-				.googleplus {
-					position:absolute;
-					top:12px; left:72px;
-					@include sprite;
-					background-position: -265px -96px;
-					height:29px; width:29px;
-				}
-
-				p {
-					margin:17px 0 0 10px;
-				}
-
-				.button.follow {
-					position:absolute;
-					top:12px;
-					right:10px;
-					background:#f4f4f4;
-					color:#222;
-					font-size:11px;
-					line-height:11px;
-					@include border-radius(2px);
-					border:1px solid #cacaca;
-					padding:9px 18px;
-				}
-			}// end social googleplus
-		} // end social medias
-	} // end left */
-	/*.right {
-		position:relative;
-		float:left;
-		width:468px;
-		margin:0;
-
-		.top {
-			position:relative;
-			margin-bottom:30px;
-
-			.case-study.thumbnail {
-				position:absolute;
-				top:0;
-				left:0;
-				padding:0;
-			}
-
-			.case-text {
-				margin:0 0 0 130px;
-
-				h1 {
-				font-family:'ChunkFive';
-				color:#666666;
-				margin:0 0 0 10px;
-				text-transform:uppercase;
-				}
-
-				h2 {
-					margin:3px 0 0 10px;
-					color:#666666;
-				}
-
-				p {
-					font-size:13px;
-					width:335px;
-					color:#666666;
-					margin:0 0 5px 10px;
-				}
-
-				ul {
-
-					margin:0 0 0 10px;
-
-					li {
-						display:inline;
-					}
-
-					li:first-child {
-						margin-left:0;
-						padding-right:15px;
-						border-right:1px solid #d3d3d3;
-					}
-
-					li:last-child {
-						margin-left:15px;
-						border-right:none;
-					}
-				}
-			}
-		} //end right top
-
-		.mid {
-			padding:0 0 25px 0;
-			border-top:1px solid #d7d7d7;
-			border-bottom:1px solid #d7d7d7;
-
-			.white-papers {
-				float:left;
-				width:230px;
-				margin-right:35px;
-
-				h2 {
-					color:#666666;
-					font-family:'ChunkFive';
-					text-transform:uppercase;
-					margin-bottom:15px;
-				}
-
-				article {
-
-					h3 {
-						text-transform:none;
-						color:#39c;
-						margin:0;
-						margin-bottom:6px;
-						line-height:18px;
-					}
-
-					p {
-						font-size:11px;
-						color:#666666;
-						margin-bottom:18px;
-					}
-				}
-			}
-
-			.latest-article {
-				float:left;
-				width:200px;
-				margin:0;
-
-				h2 {
-					color:#b85c29;
-					font-family:'ChunkFive';
-					text-transform:uppercase;
-				}
-
-				img {
-					border:1px solid #b1b1b1;
-				}
-
-				h3 {
-					font-size:14px;
-					line-height:18px;
-					color:#00529c;
-					text-transform:none;
-					margin: 18px 0 6px 0;
-				}
-
-				p {
-					font-size:13px;
-					color:#666666;
-					margin-bottom:7px;
-				}
-			}
-		} // end right mid
-
-		.bottom {
-			margin:35px 0 0;
-			position:relative;
-
-			h2 {
-				color:#00592;
-				font-family:'ChunkFive';
-				text-transform:uppercase;
-			}
-
-			p {
-				font-size:13px;
-				width:233px;
-				color:#666666;
-			}
-
-			.medias-image {
-				position:absolute;
-				top:0; right:0;
-				@include sprite;
-				background-position: 0px -161px;
-				width:205px;
-				height:135px;
-				float:right;
-			}
-		} // end right bottom
-	} // end right
-}*/
 .main.contact-page { margin-top: 24px; }
 .main.contact-page .left { width: 500px; float: left; }
 .main.contact-page .left h2 { font-size: 16px; margin: 0; }
@@ -2192,7 +1970,7 @@ width:898px;*/ height: 330px; }
 .main.contact-page .left .social-media ul { margin: 12px 0 0 0; }
 .main.contact-page .left .social-media ul li { display: block; float: left; margin-left: 20px; height: 36px; }
 .main.contact-page .left .social-media ul li a { background: url(../img/sprite.png); display: inline-block; width: 36px; height: 36px; }
-.main.contact-page .left .social-media ul li a.facebook { background-position: 0px -30px; }
+.main.contact-page .left .social-media ul li a.facebook { background-position: 0 -30px; }
 .main.contact-page .left .social-media ul li a.twitter { background-position: -36px -30px; }
 .main.contact-page .left .social-media ul li a.youtube { background-position: -72px -30px; }
 .main.contact-page .left .social-media ul li a.linkedin { background-position: -108px -30px; }
