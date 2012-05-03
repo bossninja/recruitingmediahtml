@@ -101,7 +101,7 @@
 
         <div class="entry-info">
           <figure>
-            <a href="#" title="Carolyn Magner" alt="Carolyn Magner"><img src="img/blog-avatar.jpg"></a>
+            <a href="#" title="Carolyn Magner"><img src="img/blog-avatar.jpg" alt="Carolyn Magner"></a>
           </figure>
           <div>
             <p>12/20/2011 by</p>
@@ -109,13 +109,21 @@
           </div>
         </div>
 
-        <div class="meta-info">
+        <div class="meta-info top clearfix">
           <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+
+          <div class="social">
+            <div class="g-plusone" data-size="medium"></div>
+          </div>
+
+          <div class="comment-count">
+            <p><span class="bubble">6</span> Comments</p>
+          </div>
         </div>
 
         <div class="content">
           <figure class="right">
-            <img src="img/blog-image.jpg" width:"284" height"206">
+            <img src="img/blog-image.jpg" alt="">
           </figure>
 
           <p>This is standard paragraph text. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a <a href="">this is a hyperlink</a>, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
@@ -134,9 +142,9 @@
         </div>
 
         <div class="meta-info">
-          <p><a href=""><span class="printer"></span>Print Story</a></p>
-          <p><a href=""><span class="mail"></span>Email Story</a></p>
-          <p>Interested in using this article? <a href="">Please contact us.</a></p>
+          <p><a href="#" title="Print Story"><span class="printer"></span>Print Story</a></p>
+          <p><a href="#" title="Email Story"><span class="mail"></span>Email Story</a></p>
+          <p>Interested in using this article? <a href="#" title="Contact Us">Please contact us.</a></p>
         </div>
 
         <h2>You might also be interested in:</h2>
@@ -154,6 +162,51 @@
             <img src="img/related-image.jpg" title="Related Post">
             <figcaption><a href="#" title="Social Media 101: The Basics of Free Recruiting on LinkedIn">Social Media 101: The Basics of Free Recruiting on LinkedIn</a></figcaption>
           </figure>
+        </div>
+
+        <div class="comments">
+          <h1>6 Comments <span>(Join the conversation!)</span></h1>
+
+          <div class="social-login">
+            <p>To leave a comment on this article, log in with</p>
+            <button type="button" class="fb-login"></button>
+            <p>or</p>
+            <button type="button" class="twitter-login"></button>
+          </div>
+
+          <div class="comment-entry clearfix">
+            <figure class="avatar">
+              <img src="img/comment-avatar1.jpg" alt="Rachel Chanco">
+            </figure>
+
+            <div class="comment">
+              <a href="#" title="Rachel Chanco" class="name">Rachel Chanco</a>
+              <p>There is much simpler solution, hold your phone at a different angle or park it on your chatting. Surgery for this is just silly.</p>
+
+              <section class="details">
+                <p>1 hour ago</p>
+                <p><a href="#" title="Reply">Reply</a></p>
+                <p><button class="like">Like</button> 1</p>
+              </section>
+            </div>
+          </div>
+
+          <div class="comment-entry clearfix">
+            <figure class="avatar">
+              <img src="img/comment-avatar2.jpg" alt="Ryan Lum">
+            </figure>
+
+            <div class="comment">
+              <a href="#" title="Ryan Lum" class="name">Ryan Lum</a>
+              <p>...or maybe hold your phone up higher?</p>
+
+              <section class="details">
+                <p>1 hour ago</p>
+                <p><a href="#" title="Reply">Reply</a></p>
+                <p><button class="like">Like</button> 1</p>
+              </section>
+            </div>
+          </div>
         </div>
       </section>
       <!-- end entry -->
@@ -197,13 +250,15 @@
         </div>
 
         <div class="archives">
-          <h2>&plus; Expand Archives</h2>
+          <h2><span>&plus;</span> Expand Archives</h2>
         </div>
 
         <div class="subscription">
           <p>Receive Recruiting News in Your Inbox!</p>
-          <input type="text" name="email" placeholder="Enter Your Email">
-          <button type="submit" class="button orange">Sign Me Up!</button>
+          <form>
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <button type="submit" class="button orange">Sign Me Up!</button>
+          </form>
           <a href="#" title="View Private Policy" class="small">View Private Policy</a>
         </div>
       </section>
