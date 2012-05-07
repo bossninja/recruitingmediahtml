@@ -14,8 +14,10 @@ $(function() {
 	});
 
 	$('.archives a.toggle').click(function() {
-		var txt = $(this).find('span').text() == '\u002B Expand' ? '\u002D Collapse' : '\u002B Expand';
-		$(this).find('span').text(txt);
+		var txt1 = $(this).find('span:eq(0)').text() == '\u002B' ? '\u002D' : '\u002B'; // needed for chrome font bug using "+" sign
+		var txt2 = $(this).find('span:eq(1)').text() == ' Expand' ? ' Collapse' : ' Expand';
+		$(this).find('span:eq(0)').text(txt1);
+		$(this).find('span:eq(1)').text(txt2);
 		
 		$('.archives ul').toggleClass('hide');
 		return false;
