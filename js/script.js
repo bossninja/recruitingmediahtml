@@ -9,8 +9,12 @@ $(function() {
 		$('div.account ul').toggleClass('hide');
 	});
 
-	$('.sub-navigation li a').hover(function() {
+	$('.sub-navigation li a, .lists header a').hover(function() {
 		$(this).find('span').toggleClass('active');
+	});
+
+	$('.lists .controls a').hover(function() {
+		$(this).toggleClass('active');
 	});
 
 	$('.archives a.toggle').click(function() {
