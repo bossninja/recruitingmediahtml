@@ -20,6 +20,14 @@
   <![endif]-->
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
     <!-- start header -->
     <div class="wrapper header">
@@ -66,120 +74,129 @@
     <!-- end header -->
 
     <!-- start main -->
-    <div role="main" class="container main home">
+    <div role="main" class="container main">
       <section class="slider">
         <img src="img/slide1.jpg" alt="" width="900" height="330">
+
         <div class="overlay">
-          <a class="button blue" value="Browse Media">Browse Media</a>
-          <a class="button gray" value="Case Studies">Case Studies</a>
+          <a href="#" title="Browse Media" class="button blue">Browse Media</a>
+          <a href="#" title="Case Studies" class="button gray">Case Studies</a>
         </div>
+
         <ul class="pagination">
-          <li><a href="#" title="">1</a></li>
-          <li><a href="#" title="">2</a></li>
-          <li><a href="#" title="">3</a></li>
-          <li><a href="#" title="">4</a></li>
-          <li><a href="#" title="">5</a></li>
+          <li><a href="#" title="1">1</a></li>
+          <li><a href="#" title="2">2</a></li>
+          <li><a href="#" title="3">3</a></li>
+          <li><a href="#" title="4">4</a></li>
+          <li><a href="#" title="5">5</a></li>
           <li>
-            <a href="#" title="" class="play hide"><span>play</span></a>
-            <a href="#" title="" class="pause"><span>pause</span></a>
+            <a href="#" title="Play" class="play hide"><span>Play</span></a>
+            <a href="#" title="Pause" class="pause"><span>Pause</span></a>
           </li>
         </ul>
       </section>
 
       <div class="bar-divider"></div>
 
-      <!-- start left -->
-      <section class="left">
-        <!-- start left networks -->
-        <section class="networks">
-          <h1>Media Distribution Networks:</h1>
+      <!-- start home -->
+      <section class="home clearfix">
+        <!-- start left -->
+        <section class="left">
+          <!-- start media networks -->
+          <div class="media-networks">
+            <h1>Media Distribution Networks:</h1>
 
-          <div class="network">
-            <div class="media-icon"><a href="#" class="note"></a></div>
-            <div class="media-text">
-              <h2><a href="#" title="Truck Stops &amp; Circulation">Truck Stops &amp; Circulation</a></h2>
-              <p>Exclusive distribution in over 1,400 truck stops plus our subscriber base.</p>
+            <div class="network">
+              <div class="media-icon"><a href="#" class="note"></a></div>
+              <div class="media-text">
+                <h2><a href="#" title="Truck Stops &amp; Circulation">Truck Stops &amp; Circulation</a></h2>
+                <p>Exclusive distribution in over 1,400 truck stops plus our subscriber base.</p>
+              </div>
+            </div>
+
+            <div class="network">
+              <div class="media-icon"><a href="#" class="laptop"></a></div>
+              <div class="media-text">
+                <h2><a href="#" title="Online &amp; Digital Technology">Online &amp; Digital Technology</a></h2>
+                <p>Top-ranking websites for the most searched phrases and digital publishing.</p>
+              </div>
+            </div>
+
+            <div class="network">
+              <div class="media-icon"><a href="#" class="phone"></a></div>
+              <div class="media-text">
+                <h2><a href="#" title="Mobile &amp; Smartphones">Mobile &amp; Smartphones</a></h2>
+                <p>Popular, job-specific Android &amp; iPhone apps plus booming mobile site traffic.</p>
+              </div>
+            </div>
+
+            <div class="network">
+              <div class="media-icon"><a href="#" class="calendar"></a></div>
+              <div class="media-text">
+                <h2><a href="#" title="Events &amp; Tradeshows">Events &amp; Tradeshows</a></h2>
+                <p>Largest group of industry tradeshows with over 80,000 total attendees.</p>
+              </div>
             </div>
           </div>
+          <!-- end media networks -->
 
-          <div class="network">
-            <div class="media-icon"><a href="#" class="laptop"></a></div>
-            <div class="media-text">
-              <h2><a href="#" title="Online &amp; Digital Technology">Online &amp; Digital Technology</a></h2>
-              <p>Top-ranking websites for the most searched phrases and digital publishing.</p>
+          <!-- start left subscribe -->
+          <div class="subscribe">
+            <p>
+              <span class="mail"></span><span class="recruit">Recruiting News in Your Inbox!</span>
+              <a href="#" title="View Privacy Policy" class="small">View Privacy Policy</a>
+            </p>
+
+            <form>
+              <input type="email" name="email" placeholder="Enter Your Email" />
+              <button type="submit" class="button orange">Sign Me Up!</button>
+            </form>
+          </div>
+          <!-- end left subscribe -->
+
+          <!-- start left social-media -->
+          <div class="social-media">
+            <div class="social-icons">
+              <p>Follow Recruting Media:</p>
+
+              <ul>
+                <li><a href="#" title="Facebook" class="facebook"></a></li>
+                <li><a href="#" title="Twitter" class="twitter"></a></li>
+                <li><a href="#" title="Youtube" class="youtube"></a></li>
+                <li><a href="#" title="LinkedIn" class="linkedin"></a></li>
+                <li><a href="#" title="Google Plus" class="googleplus"></a></li>
+                <li><a href="#" title="Tumblr" class="tumblr"></a></li>
+              </ul>
+            </div>
+
+            <div class="social facebook">
+              <div class="fb-like" data-send="false" data-show-faces="false"></div>
+            </div>
+
+            <div class="social gplus">
+              <div class="wrap">
+                <p>We're on <span class="gplus-icon"></span><a href="#" title="Follow">Follow</a></p>
+              </div>
             </div>
           </div>
-
-          <div class="network">
-            <div class="media-icon"><a href="#" class="phone"></a></div>
-            <div class="media-text">
-              <h2><a href="#" title="Mobile &amp; Smartphones">Mobile &amp; Smartphones</a></h2>
-              <p>Popular, job-specific Android &amp; iPhone apps plus booming mobile site traffic.</p>
-            </div>
-          </div>
-
-          <div class="network">
-            <div class="media-icon"><a href="#" class="calendar"></a></div>
-            <div class="media-text">
-              <h2><a href="#" title="Events &amp; Tradeshows">Events &amp; Tradeshows</a></h2>
-              <p>Largest group of industry tradeshows with over 80,000 total attendees.</p>
-            </div>
-          </div>
+          <!-- end left social-media -->
         </section>
-        <!-- end left networks -->
+        <!-- end left -->
 
-        <!-- start left subscribe -->
-        <section class="subscribe">
-          <span class="mail"></span><span class="recruit">Recruiting News in Your Inbox!</span> 
-          <a href="#" title="View Privacy Policy" class="small">View Privacy Policy</a>
-          <form>
-            <input type="email" name="email" placeholder="Enter Your Email" /> 
-            <button type="submit" class="button orange">Sign Me Up!</button>
-          </form>
-        </section>
-        <!-- end left subscribe -->
+        <!-- start right -->
+        <section class="right">
+          <!-- start featured case study -->
+          <div class="featured-case-study clearfix">
+            <figure class="thumbnail">
+              <img src="img/case-thumbnail.jpg" width="119" height="119">
+            </figure>
 
-        <!-- start left social-media -->
-        <section class="social-media">
-          <div class="social-icons">
-            <p>Follow Recruting Media:</p>
-
-            <ul>
-              <li><a href="#" title="Facebook" class="facebook"></a></li>
-              <li><a href="#" title="Twitter" class="twitter"></a></li>
-              <li><a href="#" title="Youtube" class="youtube"></a></li>
-              <li><a href="#" title="LinkedIn" class="linkedin"></a></li>
-              <li><a href="#" title="Google Plus" class="googleplus"></a></li>
-              <li><a href="#" title="Tumblr" class="tumblr"></a></li>
-            </ul>
-          </div>
-
-          <div class="social facebook">
-          </div>
-
-          <div class="social gplus">
-            <p>We're on <span class="gplus-icon"></span><a href="#" title="Follow">Follow</a></p>
-          </div>
-        </section>
-        <!-- end left social-media -->
-      </section>
-      <!-- end left -->
-
-      <!-- start right -->
-      <section class="right">
-        <!-- start mid bottom -->
-        <section class="case-study clearfix">
-          <figure class="thumbnail">
-            <img src="img/case-thumbnail.jpg" width="119" height="119">
-          </figure>
-
-          <div class="content">
             <hgroup>
               <h1>Case Study:</h1>
               <h2>Custom Social Solutions</h2>
             </hgroup>
 
-            <p>Set in the London offices of the fictional Reynholm Industries, the show revolves around the IT department: a geeky genius named Maurice Mos...</p>
+            <p>Set in the London offices of the fictional Reynholm Industries, the show revolves around the IT department: a geeky genius named Maurice Mos . . .</p>
 
             <p>
               <a href="#" class="small" title="Keep Reading">Keep Reading <span class="light-arrow"></span></a>
@@ -187,60 +204,69 @@
               <a href="#" class="small" title="Browse Case Studies">Browse Case Studies</a>
             </p>
           </div>
-        </section>
-        <!-- end mid top -->
 
-        <div class="divider"></div>
+          <div class="divider"></div>
 
-        <!-- start mid bottom -->
-        <section class="articles clearfix">
-          <div class="white-papers">
-            <h2>New White Papers:</h2>
-            <article>
-              <h3><a href="#" title="Understanding Driver Applications, Google, and the Market">Understanding Driver Applications, Google, and the Market</a></h3>
-              <p>The show revolves around the three staff members of its IT department: a geeky . . .</p>
-            </article>
+          <!-- start mid bottom -->
+          <div class="articles clearfix">
+            <div class="white-papers">
+              <h2>New White Papers:</h2>
 
-            <article>
-              <h3><a href="#" title="Exclusive: Driver Media Usage">Exclusive: Driver Media Usage</a></h3>
-              <p>The show revolves around the three staff members of its IT department: a geeky . . .</p>
-            </article>
+              <div class="article">
+                <h3><a href="#" title="Understanding Driver Applications, Google, and the Market">Understanding Driver Applications, Google, and the Market</a></h3>
 
-            <article>
-              <h3><a href="#" title="Exclusive: Driver Media Usage">Exclusive: Driver Media Usage</a></h3>
-              <p>The show revolves around the three staff members of its IT department: a geeky . . .</p>
-            </article>
-            <a href="#" title="Browse White Papers" class="button gray">Browse White Papers</a>
+                <p>The show revolves around the three staff members of its IT department: a geeky . . .</p>
+              </div>
+
+              <div class="article">
+                <h3><a href="#" title="Exclusive: Driver Media Usage">Exclusive: Driver Media Usage</a></h3>
+
+                <p>The show revolves around the three staff members of its IT department: a geeky . . .</p>
+              </div>
+
+              <div class="article">
+                <h3><a href="#" title="Exclusive: Driver Media Usage">Exclusive: Driver Media Usage</a></h3>
+
+                <p>The show revolves around the three staff members of its IT department: a geeky . . .</p>
+              </div>
+
+              <a href="#" title="Browse White Papers" class="button gray">Browse White Papers</a>
+            </div>
+
+            <div class="latest-article">
+              <h2>Latest Article:</h2>
+
+              <figure class="thumbnail">
+                <img src="img/article-thumbnail.jpg" width="200" height="100">
+              </figure>
+
+              <h3>
+                <a href="#" title="Print is Dead: An Honest Look at the Numbers">Print is Dead: An Honest Look at the Numbers</a>
+              </h3>
+
+              <p>Lorem ipsum do lor sit a met, Cur ab itur dapi bus dic tu . . .</p>
+
+              <a href="#" class="small" title="View Full Article">View Full Article<span class="light-arrow"></span></a>
+              <a href="#" title="More Articles" class="button orange">More Articles</a>
+            </div>
           </div>
+          <!-- end mid bottom -->
 
-          <article class="latest-article">
-            <h2>Latest Article:</h2>
+          <div class="divider"></div>
 
-            <figure class="thumbnail">
-              <img src="img/article-thumbnail.jpg" width="200" height="100">
-            </figure>
-            
-            <h3><a href="#" title="Print is Dead: An Honest Look at the Numbers">Print is Dead: An Honest Look at the Numbers</a></h3>
-            <p>Lorem ipsum do lor sit a met, Cur ab itur dapi bus dic tu . . .</p>
-            <a href="#" class="small" title="View Full Article">View Full Article<span class="light-arrow"></span></a>
-            <a href="#" title="More Articles" class="button orange">More Articles</a>
-          </article>
+          <!-- start media services -->
+          <div class="media-services">
+            <h2>All Media &amp; Services</h2>
+
+            <p>Lorem ipsum do lor sit a met, conse cte tur adi pis cing elit. Lorem ipsum do lor sit a met, conse cte tur adi pis cing elit. Cur ab itur dapi bu tu . . .</p>
+            <div class="media-image"></div>
+            <a href="#" title="Browse Media" class="button blue">Browse Media</a>
+          </div>
+          <!-- end media services -->
         </section>
-        <!-- end mid bottom -->
-
-        <div class="divider"></div>
-
-        <!-- start media services -->
-        <section class="media-services">
-          <h2>All Media &amp; Services</h2>
-
-          <p>Lorem ipsum do lor sit a met, conse cte tur adi pis cing elit. Lorem ipsum do lor sit a met, conse cte tur adi pis cing elit. Cur ab itur dapi bu tu...</p>
-          <div class="media-image"></div>
-          <a href="#" title="Browse Media" class="button blue">Browse Media</a>
-        </section>
-        <!-- end media services -->
-      </div>
-      <!-- end right -->
+        <!-- end right -->
+      </section>
+      <!-- end home -->
     </div>
     <!-- end main -->
 
