@@ -4,9 +4,9 @@
 
 $(function() {
 
-	$('div.account a.toggle').click(function() {
-		$('div.account').toggleClass('active');
-		$('div.account ul').toggleClass('hide');
+	$('.account a.toggle').click(function() {
+		$('.account').toggleClass('active');
+		$('.account ul').toggleClass('hide');
 	});
 
 	$('.sub-navigation li a, .media-lists .panel a, .media-lists .controls a').hover(function() {
@@ -18,9 +18,9 @@ $(function() {
 		var txt2 = $(this).find('span:eq(1)').text() == ' Expand' ? ' Collapse' : ' Expand';
 		$(this).find('span:eq(0)').text(txt1);
 		$(this).find('span:eq(1)').text(txt2);
-		
+
 		$('.archives ul').toggleClass('hide');
 		return false;
 	});
-	
+
 });
