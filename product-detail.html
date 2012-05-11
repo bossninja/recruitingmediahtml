@@ -86,7 +86,9 @@
         <!-- start sub navigation -->
         <section class="sub-navigation">
           <nav class="navigation product">
-            <h3><span class="info-icon"></span>More Information</h3>
+            <h3 class="clearfix">
+              <span class="info-icon"></span><span class="text">More Information</span>
+            </h3>
 
             <ul>
               <li><a href="#" title="Advertising Options &amp; Rates" class="active"><span class="arrow active"></span>Advertising Options &amp; Rates</a></li>
@@ -98,8 +100,10 @@
           </nav>
 
           <nav class="navigation product">
-            <h3><span class="download-icon"></span>Downloads (PDF)</h3>
-            
+            <h3 class="clearfix">
+              <span class="download-icon"></span><span class="text">Downloads (PDF)</span>
+            </h3>
+
             <ul>
               <li><a href="#" title="Student Driver Media Kit" class="active"><span class="arrow active"></span>Student Driver Media Kit</a></li>
               <li><a href="#" title="Technical Specifications"><span class="arrow"></span>Technical Specifications</a></li>
@@ -111,41 +115,58 @@
 
         <!-- start main content -->
         <section class="main-content">
-
           <!-- start product detail -->
           <div class="product-detail clearfix">
             <div class="gallery-wrap">
               <div class="gallery">
                 <ul>
-                  <li><div><a href="" title=""><img src="img/gallery-sample.jpg" alt="" width="255" height="281"></a></div></li>
-                  <li><div><a href="" title=""><img src="img/gallery-sample.jpg" alt="" width="255" height="281"></a></div></li>
+                  <li>
+                    <div><a href="#" title=""><img src="img/gallery-sample.jpg" alt="" width="255" height="281"></a></div>
+                  </li>
+                  <li>
+                    <div><a href="#" title=""><img src="img/gallery-sample.jpg" alt="" width="255" height="281"></a></div>
+                  </li>
                 </ul>
               </div>
-              <div class="image-control clearfix"> 
-                <a href="#" title="Previous" class="left-arrow"></a> <span class="page">22 of 22</span><a href="#" title="Next" class="right-arrow"></span></a>
+
+              <div class="image-control clearfix">
+                <a href="#" title="Prev" class="left-arrow"></a>
+                <span class="page">2 of 10</span>
+                <a href="#" title="Next" class="right-arrow"></span></a>
               </div>
             </div>
 
-              <div class="content">
-                <h2>Hiring Truck Drivers</h2>
-                <div class="share"></div>
-                <p>This is the key features section. The Jungle Book The Jungle Book The Jungle Book (1894) is a collection.</p>
-                <ul class="">
-                  <li><p>By British Nobel Laureate Rudyard Kipling.</p></li>
-                  <li><p>The stories were first published in magazines</p></li>
-                  <li><p>The stories were first published in magazines in 1834 - 94.</p></li>
-                  <li><p>The stories were first published in magazines in first published <a href="#" title="Show More" class="small show">. . . Show More</a></p></li>
-                </ul>
+            <div class="content">
+              <h2>Hiring Truck Drivers</h2>
 
-                <div class="buttons">
-                  <a href="#" title="Contact us to advertise" class="button blue">Contact us to Advertise</a><a href="#" title="Save to list" class="button gray"><span class="save-icon"></span>Save to list</a>
-                  <a href="#" title="What's This?" class="small what">What's This?</a>
+              <div class="share clearfix">
+                <div class="fb-like">
+                  <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=230242963666279" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+                </div>
+
+                <div class="g-plus-one">
+                  <g:plusone size="medium"></g:plusone>
                 </div>
               </div>
 
-          </div>
-          <!-- end product-detail -->
+              <p>This is the key features section. The Jungle Book The Jungle Book The Jungle Book (1894) is a collection.</p>
 
+              <ul>
+                <li><p>By British Nobel Laureate Rudyard Kipling.</p></li>
+                <li><p>The stories were first published in magazines</p></li>
+                <li><p>The stories were first published in magazines in 1834 - 94.</p></li>
+                <li><p>The stories were first published in magazines in first published <a href="#" title="Show More" class="small show">. . . Show More</a></p></li>
+              </ul>
+
+              <div class="buttons">
+                <a href="#" title="Contact us to advertise" class="button blue">Contact us to Advertise</a><a href="#" title="Save to list" class="button gray"><span class="save-icon"></span>Save to list</a>
+                <a href="#" title="What's This?" class="small what">What's This?</a>
+              </div>
+            </div>
+          </div>
+          <!-- end product detail -->
+
+          <!-- start media share -->
           <div class="media-share clearfix">
             <div class="digital-magazine">
               <figure>
@@ -166,7 +187,7 @@
               <p><span class="youtube"></span><a href="#" title="Youtube Truck Drivers">YouTube.com/HiringTruckDriverscom</a></p>
             </div>
           </div>
-          
+          <!-- end media share -->
         </section>
         <!-- end main content -->
       </section>
@@ -314,6 +335,14 @@
 
 <script src="js/libs/bootstrap/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 
 <!-- <script>
   var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
