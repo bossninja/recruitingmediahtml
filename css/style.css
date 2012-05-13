@@ -2245,7 +2245,7 @@ textarea { resize: none; }
 .container.main .home .right .media-services { margin: 30px 0 0; position: relative; }
 .container.main .home .right .media-services h2 { color: #00529c; font-family: 'ChunkFive'; text-transform: uppercase; margin-bottom: 9px; }
 .container.main .home .right .media-services p { width: 234px; }
-.container.main .home .right .media-services .media-image { background: url(../img/sprite.png); position: absolute; top: 0; right: 0; background-position: 0px -161px; width: 205px; height: 135px; }
+.container.main .home .right .media-services .media-image { background: url(../img/sprite.png); position: absolute; top: 0; right: 2px; background-position: 0px -161px; width: 198px; height: 135px; }
 
 .wrapper.footer { margin-top: 75px; height: 360px; background: #00336c; }
 .wrapper.footer nav.footer { text-transform: uppercase; font-size: 12px; margin: 30px 0 24px; }
