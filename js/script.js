@@ -23,4 +23,6 @@ $(function() {
 		return false;
 	});
 
+	$('.follow.facebook .fb-like iframe, .follow.facebook .fb-like span').css('width', '100%');
+
 });
